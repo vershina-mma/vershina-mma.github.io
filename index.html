@@ -439,10 +439,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .footer-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
 .footer-links a:hover{color:#fff}.footer-links a:hover::after{transform:scaleX(1)}
 
-.fab{position:fixed;right:20px;bottom:20px;z-index:80;width:62px;height:62px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.4);transform:scale(0);transition:transform .5s var(--ease)}
+.fab{position:fixed;right:20px;bottom:20px;z-index:80;width:62px;height:62px;border-radius:50%;background:#3557d8;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(53,87,216,.4);transform:scale(0);transition:transform .5s var(--ease)}
 .fab.show{transform:scale(1)}
 .fab svg{width:30px;height:30px}
-.fab::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ping 2.2s infinite}
+.fab::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #3557d8;animation:ping 2.2s infinite}
 @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.6);opacity:0}}
 
 .js .rv{opacity:0;transform:translateY(50px)}
@@ -490,7 +490,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .ach-row{grid-template-columns:1fr;gap:6px;padding:22px 0}
   .ach-place{text-align:left;font-size:22px}
   .ach-legend{text-align:left}
-  /* Кнопка звонка заменяется нижней панелью */
+  /* Кнопка MAX заменяется нижней панелью */
   .fab{display:none}
   .mbar{display:flex}
   body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
@@ -530,7 +530,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <a href="#contacts">Контакты</a>
     </nav>
     <div style="display:flex;gap:10px;align-items:center">
-      <a href="#" class="btn btn-primary nav-cta js-tel magnetic">Пробная тренировка</a>
+      <a href="#" class="btn btn-primary nav-cta js-max magnetic">Пробная тренировка</a>
       <button class="burger" aria-label="Меню" id="burger"><span></span><span></span></button>
     </div>
   </div>
@@ -544,7 +544,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <a href="#prices">Цены</a>
   <a href="#gallery">Галерея</a>
   <a href="#contacts">Контакты</a>
-  <a href="#" class="btn btn-primary js-tel">Записаться</a>
+  <a href="#" class="btn btn-primary js-max">Записаться</a>
 </div>
 
 <main id="top">
@@ -576,13 +576,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="hero-bottom">
     <div class="wrap">
       <div class="hero-ctas">
-        <a href="#" class="btn btn-light js-tel magnetic">
+        <a href="#" class="btn btn-light js-max magnetic">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.6-.1 1.2z"/></svg>
           Пробная тренировка
         </a>
         <a href="#schedule" class="btn btn-ghost-w magnetic">Расписание</a>
       </div>
-      <a href="#" class="hero-badge js-tel magnetic" aria-label="Записаться на пробную тренировку">
+      <a href="#" class="hero-badge js-max magnetic" aria-label="Записаться на пробную тренировку">
         <svg class="hb-ring" viewBox="0 0 120 120"><defs><path id="hbCirc" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text><textPath href="#hbCirc" textLength="292">ПРОБНАЯ ТРЕНИРОВКА • ЗАПИСАТЬСЯ • </textPath></text></svg>
         <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></i>
       </a>
@@ -660,7 +660,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <article class="dir rv">
         <div class="dir-bg" style="--ph:url(assets/img/mma.jpg) center/cover"></div>
         <div class="dir-num">01</div>
-        <a href="#" class="dir-arrow js-tel" aria-label="Записаться на ММА"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a href="#" class="dir-arrow js-max" aria-label="Записаться на ММА"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         <h3>ММА</h3>
         <p>Смешанные единоборства: ударная техника, борьба в стойке и партере. Младшая (5–7 лет), средняя (8–13) и старшая (14+) группы — любительские и проф.</p>
         <ul><li>С 5 лет</li><li>Утренняя группа 7+</li><li>Любители и проф</li><li>Спарринги</li><li>Турниры</li></ul>
@@ -668,7 +668,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <article class="dir rv">
         <div class="dir-bg" style="--ph:url(assets/img/box.jpg) center/cover"></div>
         <div class="dir-num">02</div>
-        <a href="#" class="dir-arrow js-tel" aria-label="Записаться на бокс"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a href="#" class="dir-arrow js-max" aria-label="Записаться на бокс"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         <h3>Бокс</h3>
         <p>Постановка удара, работа ног, защита и тактика боя. Детская группа 10–13 лет и группа 14+. Тренер с опытом более 8 лет.</p>
         <ul><li>10–13 лет</li><li>14+</li><li>Персональные</li><li>Спарринги</li></ul>
@@ -686,7 +686,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <h2 class="h-display sec-title">Путь к <span class="o">вершине</span></h2>
     </div>
     <div class="path-track" id="pathTrack">
-      <div class="step" style="--i:0"><div class="step-n">01</div><div><h4>Пробная тренировка</h4><p>Звонишь нам, приходишь в зал, знакомишься с тренером и группой.</p></div></div>
+      <div class="step" style="--i:0"><div class="step-n">01</div><div><h4>Пробная тренировка</h4><p>Пишешь в MAX или звонишь, приходишь в зал, знакомишься с тренером и группой.</p></div></div>
       <div class="step" style="--i:1"><div class="step-n">02</div><div><h4>Своя группа</h4><p>Подбираем группу по возрасту и уровню: любительскую или проф.</p></div></div>
       <div class="step" style="--i:2"><div class="step-n">03</div><div><h4>База и ОФП</h4><p>Стойка, удары, защита, борьба. По субботам — общая физподготовка.</p></div></div>
       <div class="step" style="--i:3"><div class="step-n">04</div><div><h4>Спарринги</h4><p>Каждую пятницу — спарринги для всех групп, по желанию.</p></div></div>
@@ -775,7 +775,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <div class="eyebrow">Стоимость</div>
         <h2 class="h-display sec-title">Абонементы</h2>
       </div>
-      <p class="sec-note rv">Стоимость абонементов уточняйте у тренера по телефону 8-989-284-77-53 — действуют скидки, а отличившимся ребятам полагаются подарки и премии.</p>
+      <p class="sec-note rv">Стоимость абонементов уточняйте у тренера в MAX или по телефону 8-989-284-77-53 — действуют скидки, а отличившимся ребятам полагаются подарки и премии.</p>
     </div>
     <div class="prices">
       <div class="price hot rv" data-tilt>
@@ -783,19 +783,19 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <h4>Пробная</h4><div class="sub">Первое знакомство с клубом</div>
         <div class="price-v">Шаг 1</div>
         <ul><li>Знакомство с тренером</li><li>Подбор группы по возрасту и уровню</li><li>Ответим на все вопросы</li></ul>
-        <a href="#" class="btn btn-light js-tel">Записаться на пробную</a>
+        <a href="#" class="btn btn-light js-max">Записаться на пробную</a>
       </div>
       <div class="price rv" data-tilt>
         <h4>Групповые</h4><div class="sub">Абонемент на месяц</div>
         <div class="price-v">3–5<small>раз в неделю</small></div>
         <ul><li>3–5 тренировок в неделю</li><li>Своя группа по возрасту и уровню</li><li>ОФП по субботам и спарринги по пятницам</li><li>Скидки, подарки и премии за успехи в спорте и учёбе</li></ul>
-        <a href="#" class="btn btn-ghost js-tel">Узнать стоимость</a>
+        <a href="#" class="btn btn-ghost js-max">Узнать стоимость</a>
       </div>
       <div class="price rv" data-tilt>
         <h4>Персональные</h4><div class="sub">Один на один с тренером</div>
         <div class="price-v">1 на 1<small>с тренером</small></div>
         <ul><li>Индивидуальная программа</li><li>Время по договорённости</li><li>Подготовка к турнирам</li></ul>
-        <a href="#" class="btn btn-ghost js-tel">Узнать подробнее</a>
+        <a href="#" class="btn btn-ghost js-max">Узнать подробнее</a>
       </div>
     </div>
   </div>
@@ -901,7 +901,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       <div class="qa"><button>Что нужно для тренировки?<span class="pm"></span></button><div class="qa-a"><p>Опрятная спортивная форма, закрывающая торс, таз и верх бёдер, и сменная обувь на чистой подошве. Удары ногами по мешкам — босиком или в специальной обуви. Про перчатки и защиту расскажем при записи.</p></div></div>
       <div class="qa"><button>Какие правила в клубе?<span class="pm"></span></button><div class="qa-a"><p>Тренировка начинается с разминки, поэтому при опоздании больше чем на 10 минут тренер может не допустить к занятию. Во время тренировки телефон выключен. В клубе запрещены алкоголь, курение, жвачка и домашние животные. Об изменениях расписания сообщаем в группе клуба.</p></div></div>
       <div class="qa"><button>Есть ли персональные тренировки?<span class="pm"></span></button><div class="qa-a"><p>Да. Расписание индивидуальных тренировок согласуется лично с тренером.</p></div></div>
-      <div class="qa"><button>Как записаться?<span class="pm"></span></button><div class="qa-a"><p>Позвоните по номеру 8-989-284-77-53 — запишем на пробную тренировку.</p></div></div>
+      <div class="qa"><button>Как записаться?<span class="pm"></span></button><div class="qa-a"><p>Напишите нам в MAX или позвоните по номеру 8-989-284-77-53 — запишем на пробную тренировку.</p></div></div>
     </div>
   </div>
 </section>
@@ -915,8 +915,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <div class="contact-grid">
       <div class="form rv" id="leadForm">
         <h3>Пробная тренировка</h3>
-        <p>Позвоните нам — подберём группу и время первой тренировки.</p>
-        <a href="#" class="btn btn-primary magnetic js-tel">Позвонить: 8-989-284-77-53</a>
+        <p>Напишите нам в MAX или позвоните — подберём группу и время первой тренировки.</p>
+        <a href="#" class="btn btn-primary magnetic js-max">Написать в MAX</a>
+        <a href="#" class="btn btn-ghost js-tel" style="margin-top:10px">Позвонить: 8-989-284-77-53</a>
       </div>
 
       <div class="info rv">
@@ -927,8 +928,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
           <div><h6>Адрес</h6><p>г. Кропоткин,<br>пер. Белинского, 51</p></div>
           <div><h6>Телефон</h6><p><a href="#" class="js-tel">8-989-284-77-53</a></p></div>
           <div><h6>Режим работы</h6><p>Пн–Сб, 9:00–21:30</p></div>
-          <div><h6>Запись</h6><p>По телефону</p></div>
+          <div><h6>Запись</h6><p>MAX / телефон</p></div>
           <div class="socials">
+            <a href="#" class="soc js-max"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5L4.6 22l4.2-2.2c1 .3 2.1.4 3.2.4 5.5 0 10-3.9 10-8.6S17.5 3 12 3z"/></svg>MAX</a>
             <a href="#" class="soc js-tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.6 2.9 10.8c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM9 13.6l9.4-5.9c.4-.3.8-.1.5.2l-8 7.3-.3 3.3z"/></svg>Telegram</a>
             <a href="#" class="soc js-vk"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.8 17.5c-5.6 0-8.8-3.8-9-10.2h2.8c.1 4.7 2.2 6.6 3.8 7V7.3h2.6v4c1.6-.2 3.3-2 3.8-4h2.6c-.4 2.5-2.2 4.3-3.5 5.1 1.3.6 3.4 2.2 4.2 5.1h-2.9c-.6-1.9-2.2-3.4-4.2-3.6v3.6z"/></svg>VK</a>
           </div>
@@ -952,11 +954,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 </footer>
 
 <div class="mbar" id="mbar">
-  <a href="#" class="btn btn-primary js-tel">Записаться на пробную</a>
+  <a href="#" class="btn btn-primary js-max">Записаться на пробную</a>
   <a href="#" class="call js-tel" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
 </div>
 
-<a href="#" class="fab js-tel" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+<a href="#" class="fab js-max" aria-label="Написать в MAX"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5L4.6 22l4.2-2.2c1 .3 2.1.4 3.2.4 5.5 0 10-3.9 10-8.6S17.5 3 12 3z"/></svg></a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -967,6 +969,7 @@ const CONFIG = {
   telegram: 'https://t.me/mma_vershina_kropotkin',
   vk: 'https://vk.com/mma_vershina_kropotkin',
   phone: '+79892847753',
+  max: 'https://max.ru/u/f9LHodD0cOINgOqDnaifPq2oNVgpkXkVjyHOVl2ZoHM4YcV3H8ZCFyh31LQ',
   // Ссылка на «Пульт сайта» (Google Apps Script → Развернуть → URL веб-приложения, оканчивается на /exec).
   // Сайт берёт оттуда объявление, расписание, новости, достижения, галерею и фото.
   // Пусто или пульт недоступен — сайт показывает данные, зашитые в код ниже.
@@ -1005,7 +1008,7 @@ const ext = (sel, href) => document.querySelectorAll(sel).forEach(a => {
   if (href === '#') return a.remove(); // пока нет ссылки — кнопку не показываем
   a.href = href; a.target = '_blank'; a.rel = 'noopener';
 });
-ext('.js-tg', CONFIG.telegram); ext('.js-vk', CONFIG.vk);
+ext('.js-max', CONFIG.max); ext('.js-tg', CONFIG.telegram); ext('.js-vk', CONFIG.vk);
 document.querySelectorAll('.js-tel').forEach(a => a.href = 'tel:' + CONFIG.phone);
 
 /* Кнопки: текст дублируется и прокручивается при наведении */
